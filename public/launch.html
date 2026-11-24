@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Launch a coin — Ripen</title>
+<meta name="description" content="Plant a coin on Ripen. It trades against $RIPE and every creator fee ripens into payouts for its holders.">
+<meta name="theme-color" content="#F3EDE2">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/ripen.css?v=1">
+<script>document.documentElement.classList.add('js');setTimeout(()=>document.documentElement.classList.add('rv-all'),2500)</script>
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="/" aria-label="Ripen home"><img src="/art/mark.svg" alt="" width="34" height="34">Ripen</a>
+  <div class="ca"><span class="mono">CA</span><b>launching soon</b><button type="button" data-copy>Copy</button></div>
+</header>
+
+<nav class="dock" aria-label="Main">
+  <a class="nav" href="/">Home</a>
+  <a class="nav opt" href="/#curve">Ripeness</a>
+  <a class="nav opt" href="/#orchard">Orchard</a>
+  <span class="sep"></span>
+  <a class="btn accent sm" href="#form">Launch a coin</a>
+</nav>
+
+<main class="launch">
+  <div class="wrap">
+    <p class="eyebrow rv">Plant a coin</p>
+    <h1 class="h-big split" data-split style="margin:14px 0 18px;max-width:14ch">Plant a coin that pays its holders.</h1>
+    <p class="lede rv" style="margin-bottom:48px">It trades against $RIPE from the first block. Its creator fees are split between the wallets holding it, weighted by how long they have held.</p>
+
+    <div class="launch-grid" id="form">
+      <form class="form rv" data-launch novalidate>
+        <div class="pair">
+          <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" maxlength="32" placeholder="Slow Pear" autocomplete="off"></div>
+          <div class="field"><label for="f-sym">Ticker</label><input id="f-sym" name="symbol" maxlength="10" placeholder="PEAR" autocomplete="off"></div>
+        </div>
+        <div class="field"><label for="f-desc">Description</label><textarea id="f-desc" name="desc" maxlength="240" placeholder="One or two lines. What is it, and why would someone keep it?"></textarea></div>
+        <div class="field"><label for="f-img">Image</label><input id="f-img" name="image" type="file" accept="image/*"><small>Square works best. PNG, JPG or WebP.</small></div>
+        <div class="pair">
+          <div class="field"><label for="f-x">X (optional)</label><input id="f-x" name="x" placeholder="https://x.com/…"></div>
+          <div class="field"><label for="f-tg">Telegram (optional)</label><input id="f-tg" name="tg" placeholder="https://t.me/…"></div>
+        </div>
+        <ol class="steps">
+          <li><b>01</b><span>Paired with $RIPE and listed in the orchard.</span></li>
+          <li><b>02</b><span>Creator fees collect in the coin's payout wallet.</span></li>
+          <li><b>03</b><span>Every five minutes they are split between holders by ripeness.</span></li>
+        </ol>
+        <button class="btn accent" type="submit" style="justify-self:start">Connect wallet to launch <span class="arr">→</span></button>
+        <small style="color:var(--ink-2)">No platform launch fee. Network costs apply.</small>
+      </form>
+
+      <aside class="preview rv" style="--rd:.12s" aria-label="Preview">
+        <span class="eyebrow" style="color:var(--on-plum-2)">Preview</span>
+        <div class="pic" data-pv-pic><img src="/art/tile-3.svg" alt=""></div>
+        <div class="nm"><b data-pv-name>Your coin</b><span data-pv-sym>$TICKER</span></div>
+        <p data-pv-desc></p>
+        <div class="meter"><span>holders 0</span><span>ripeness 1.00x</span><span>paid —</span></div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Ripen · Not financial advice. Memecoins are volatile.</span>
+    <nav><a href="/">Home</a><a href="/#how">How it works</a></nav>
+  </div>
+</footer>
+<div class="toast" data-toast role="status" aria-live="polite"></div>
+<script src="/vendor/gsap.min.js"></script>
+<script src="/vendor/ScrollTrigger.min.js"></script>
+<script src="/vendor/lenis.min.js"></script>
+<script src="/assets/ripen.js?v=1"></script>
+</body>
+</html>

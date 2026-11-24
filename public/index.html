@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ripen — the longer you hold, the bigger your share</title>
+<meta name="description" content="Ripen is a launchpad where every coin pays its creator fees to its holders, and a wallet's share ripens the longer it holds, up to 12x after 21 days.">
+<meta name="theme-color" content="#F3EDE2">
+<meta property="og:title" content="Ripen">
+<meta property="og:description" content="Launch coins that pay their holders. The longer a wallet holds, the riper its share.">
+<meta property="og:type" content="website">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/ripen.css?v=1">
+<script>document.documentElement.classList.add('js');setTimeout(()=>document.documentElement.classList.add('rv-all'),2500)</script>
+</head>
+<body>
+
+<header class="top">
+  <a class="logo" href="/" aria-label="Ripen home"><img src="/art/mark.svg" alt="" width="34" height="34">Ripen</a>
+  <div class="ca"><span class="mono">CA</span><b data-ca>launching soon</b><button type="button" data-copy>Copy</button></div>
+</header>
+
+<nav class="dock" aria-label="Main">
+  <a class="nav" href="#how">How it works</a>
+  <a class="nav opt" href="#curve">Ripeness</a>
+  <a class="nav opt" href="#orchard">Orchard</a>
+  <a class="nav opt" href="#payouts">Payouts</a>
+  <span class="sep"></span>
+  <a class="btn accent sm" href="/launch.html">Launch a coin</a>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap hero-copy">
+      <div>
+        <p class="eyebrow rv" style="--rd:.1s">Solana launchpad · every coin paired with $RIPE</p>
+        <h1 id="h1" class="h-xl" style="margin-top:18px">
+          <span class="ln"><span data-hl>Let it</span></span>
+          <span class="ln"><span data-hl><em>ripen.</em></span></span>
+        </h1>
+      </div>
+      <div class="hero-mark rv" style="--rd:.5s" aria-hidden="true"><i></i><i class="b"></i><img src="/art/mark.svg" alt=""></div>
+    </div>
+
+    <div class="hero-row">
+      <div class="curve" data-curve aria-hidden="true"></div>
+    </div>
+
+    <div class="wrap hero-foot">
+      <p class="lede rv" style="--rd:1.1s">Every creator fee goes back to the people holding the coin, and a wallet's share grows riper every hour it stays: 1x the day it buys, 12x after three weeks.</p>
+      <div class="cta rv" style="--rd:1.25s">
+        <a class="btn ghost" href="#orchard">Browse the orchard</a>
+        <a class="btn ink" href="/launch.html">Plant a coin <span class="arr">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESS AND HOLD -->
+  <section class="band paper" id="how">
+    <div class="wrap press">
+      <div>
+        <p class="eyebrow rv">Try it</p>
+        <h2 class="h-big split" data-split style="margin-top:14px">Press. Keep pressing.</h2>
+        <p class="lede rv" style="margin-top:20px">Holding the button is holding the coin. Each second here is about two days on chain. Watch the share ripen, then let go and see what selling does.</p>
+        <ul class="steps rv" style="--rd:.15s;max-width:440px">
+          <li><b>01</b><span>Buy: your wallet starts at 1x.</span></li>
+          <li><b>02</b><span>Hold: the multiplier climbs fastest in the first week.</span></li>
+          <li><b>03</b><span>Let go: the clock runs back to zero.</span></li>
+        </ul>
+      </div>
+      <div class="dial rv" data-dial style="--rd:.2s">
+        <svg viewBox="0 0 470 470" data-dialsvg aria-hidden="true"></svg>
+        <button class="core" type="button" data-core aria-label="Press and hold to ripen">
+          <b><span data-dm>1.00</span><small>x</small></b>
+          <span data-ds>bought just now</span>
+          <em>Hold me</em>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACTS -->
+  <section class="band plum">
+    <div class="wrap">
+      <div class="head">
+        <h2 class="h-big split" data-split>Every creator fee goes to the holders.</h2>
+        <p class="lede rv">No team cut, no treasury skim. The fee from every trade waits in one payout wallet until the next split.</p>
+      </div>
+      <div class="facts">
+        <div class="fact f1 rv"><b>100%</b><span>of creator fees paid to holders</span></div>
+        <div class="fact f2 rv" style="--rd:.08s"><b>12x</b><span>share after holding 21 days</span></div>
+        <div class="fact f3 rv"><b>5 min</b><span>between payouts</span></div>
+        <div class="fact f4 rv" style="--rd:.08s"><b>0.05%</b><span>of supply to be counted</span></div>
+        <div class="fact f5 rv" style="--rd:.16s"><b>0%</b><span>kept by Ripen</span></div>
+        <div class="fact f6 rv"><b>1 pair</b><span>Every coin launched here trades against $RIPE and pays its holders in $RIPE.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURVE -->
+  <section class="band" id="curve">
+    <div class="wrap">
+      <div class="head">
+        <h2 class="h-big split" data-split>The ripeness curve.</h2>
+        <p class="lede rv">A wallet that just bought counts 1x. After a day it counts 2.7x, after a week 8.8x. At 21 days it is fully ripe at 12x and stays there.</p>
+      </div>
+      <div class="chart rv" data-chart>
+        <div class="readout"><div class="big"><span data-cm>1.00</span><small>x</small></div><div class="t" data-ct>bought just now</div></div>
+        <span class="hint">Move across to read it</span>
+        <svg data-csvg preserveAspectRatio="none"></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- DUEL -->
+  <section class="band paper">
+    <div class="wrap">
+      <div class="head">
+        <h2 class="h-big split" data-split>Patience beats size.</h2>
+        <p class="lede rv">A wallet holding 1% for two weeks takes a bigger slice than one that bought 6% this morning.</p>
+      </div>
+      <div class="duel rv" data-duel>
+        <div class="row a"><div class="who"><b>Wallet A holds 1%</b><span data-ha>held 0 days</span></div><div class="track"><i data-sa></i><em data-ma>1.00x</em></div><div class="pct" data-pa>14%</div></div>
+        <div class="row b"><div class="who"><b>Wallet B buys 6%</b><span>bought just now</span></div><div class="track"><i data-sb></i><em>1.00x</em></div><div class="pct" data-pb>86%</div></div>
+        <div class="foot-l"><span>Share of each payout</span><span data-sl>after A has held 0 days</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TILES -->
+  <section class="band" style="padding-top:clamp(60px,8vw,100px)">
+    <div class="wrap tiles">
+      <div class="tile plum rv" data-tile="round">
+        <h3>Paid every five minutes.</h3><p data-rs>between splits</p>
+        <div class="body"><div class="clock" data-rt>5 min</div><div class="bar5"><i data-rbar></i></div></div>
+      </div>
+      <div class="tile light rv" style="--rd:.1s" data-tile="sell">
+        <h3>Selling picks the fruit early.</h3><p>Sell half the bag and half the ripeness goes with it. Sell all of it and the clock starts over.</p>
+        <div class="body"><div class="basket" data-basket></div><div class="sellnum"><b data-sc>0 days</b><span data-sm>1.00x</span></div><div class="note" data-sn>Holding</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIDEWAYS STORY -->
+  <section class="hs" data-hs aria-label="How a share is worked out">
+    <div class="stage">
+      <div class="stage-head">
+        <h2 class="h-big">How Ripen pays.</h2>
+        <div class="now"><b><span data-hm>1.00</span>x</b><span data-hd>bought just now</span></div>
+      </div>
+      <div class="track" data-track>
+        <article class="panel"><span class="n">01</span><h3>Every coin launched here pays its holders</h3><p>Creator fees from each trade collect in one payout wallet. Every five minutes they are split between everyone holding at least 0.05% of the supply, and sent in $RIPE.</p></article>
+        <article class="panel"><span class="n">02</span><h3>Your share ripens every hour</h3><p>A wallet that just bought counts 1x. After a day it counts 2.7x, after a week 8.8x. The same bag earns more each day it stays put.</p></article>
+        <article class="panel"><span class="n">03</span><h3>Fully ripe at three weeks</h3><p>The curve climbs fastest in the first days and reaches 12x at day 21, where it stays for as long as you hold.</p></article>
+        <article class="panel"><span class="n">04</span><h3>Selling picks it early</h3><p>Sell half the bag and half the hold time leaves with it. Sell everything and you start from zero. Buying more mixes fresh coins in, so hold time is averaged.</p></article>
+        <article class="panel ink"><span class="n">05</span><h3>The formula</h3><p>Each split goes by weight. Weights are sampled every 30 seconds, so a wallet that bought a minute before a split earns about a minute's worth.</p><div class="formula">weight = coins × seconds held × ripeness<br>ripeness = 1x at buy → 12x at 21 days</div></article>
+      </div>
+      <div class="rail"><div class="ln"><i data-prog></i></div><span class="m" style="left:0%">Bought</span><span class="m" style="left:25%">1 day</span><span class="m" style="left:50%">21 days</span><span class="m" style="left:75%">Sold</span><span class="m" style="left:100%">Formula</span></div>
+    </div>
+  </section>
+
+  <!-- ORCHARD -->
+  <section class="band paper" id="orchard">
+    <div class="wrap">
+      <div class="sec-h">
+        <h2 class="h-sec">The orchard</h2>
+        <div class="chips" data-sort><button class="chip on" type="button">Newest</button><button class="chip" type="button">Most holders</button><button class="chip" type="button">Ripest</button><button class="chip" type="button">Most paid</button></div>
+        <span class="sp"></span><a class="link" href="/launch.html">Plant one</a>
+      </div>
+      <div class="empty rv">
+        <img class="seed" src="/art/mark.svg" alt="" width="70" height="70">
+        <b>Nothing planted yet.</b>
+        <p>Coins appear here the moment they launch. Holders of the first one start earning from the first split.</p>
+        <a class="btn accent" href="/launch.html">Launch the first coin</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAYOUTS -->
+  <section class="band" id="payouts">
+    <div class="wrap two">
+      <div>
+        <div class="sec-h"><h2 class="h-sec">Recent payouts</h2><span class="sp"></span><span class="mono" style="color:var(--ink-2)">on-chain ledger</span></div>
+        <div class="feed rv"><div class="empty"><b>No payouts yet</b><p>Every split will be listed here with its transaction, the coin it came from and how many wallets it reached.</p></div></div>
+      </div>
+      <div>
+        <div class="sec-h"><h2 class="h-sec">Totals</h2></div>
+        <div class="totals rv" style="--rd:.1s">
+          <div><span>Coins launched</span><b>—</b></div>
+          <div><span>Creator fees collected</span><b>—</b></div>
+          <div><span>Paid to holders</span><b>—</b></div>
+          <div><span>Wallets paid</span><b>—</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="end band paper">
+    <div class="wrap row">
+      <h2 class="h-xl split" data-split>Plant it. Keep it.</h2>
+      <div style="display:grid;gap:16px;justify-items:start">
+        <p class="lede rv">No platform launch fee. Network costs apply.</p>
+        <a class="btn accent rv" href="/launch.html" style="--rd:.1s">Launch a coin <span class="arr">→</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Ripen · Not financial advice. Memecoins are volatile.</span>
+    <nav><a href="#how">How it works</a><a href="#curve">Ripeness</a><a href="/launch.html">Launch</a><a href="#" data-soon>X</a><a href="#" data-soon>Telegram</a></nav>
+  </div>
+</footer>
+
+<div class="toast" data-toast role="status" aria-live="polite"></div>
+
+<script src="/vendor/gsap.min.js"></script>
+<script src="/vendor/ScrollTrigger.min.js"></script>
+<script src="/vendor/lenis.min.js"></script>
+<script src="/assets/ripen.js?v=1"></script>
+</body>
+</html>
